@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import getThemeColor from "../../utils/getThemeColor"
+
 import {
   PostItemWrapper,
   PostItemLink,
@@ -20,7 +22,13 @@ const PostItem = ({
   title,
   description,
 }) => (
-  <PostItemLink to={slug}>
+  <PostItemLink
+    to={slug}
+    cover
+    direction="right"
+    bg={getThemeColor()}
+    duration={0.6}
+  >
     <PostItemWrapper>
       <PostItemTag background={background}>{category}</PostItemTag>
       <PostItemInfo>

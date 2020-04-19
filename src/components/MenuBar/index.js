@@ -7,6 +7,8 @@ import { LightBulb as Light } from "@styled-icons/entypo/LightBulb"
 import { ThList as List } from "@styled-icons/typicons/ThList"
 import { Grid } from "@styled-icons/boxicons-solid/Grid"
 
+import getThemeColor from "../../utils/getThemeColor"
+
 import {
   MenuBarWrapper,
   MenuBarGroup,
@@ -31,12 +33,26 @@ const MenuBar = () => {
   return (
     <MenuBarWrapper>
       <MenuBarGroup>
-        <MenuBarLink to="/" title="Voltar para Home">
+        <MenuBarLink
+          to="/"
+          title="Voltar para Home"
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+        >
           <MenuBarItem>
             <Home />
           </MenuBarItem>
         </MenuBarLink>
-        <MenuBarLink to="/search" title="Pesquisar">
+        <MenuBarLink
+          to="/search"
+          title="Pesquisar"
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+        >
           <MenuBarItem>
             <Search />
           </MenuBarItem>

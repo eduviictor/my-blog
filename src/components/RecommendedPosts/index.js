@@ -3,16 +3,32 @@ import PropTypes from "prop-types"
 
 import { RecommendedWrapper, RecommendedLink } from "./styles"
 
+import getThemeColor from "../../utils/getThemeColor"
+
 const RecommendedPosts = ({ next, previous }) => (
   <RecommendedWrapper>
     {previous && (
-      <RecommendedLink to={previous.fields.slug} className="previous">
+      <RecommendedLink
+        to={previous.fields.slug}
+        className="previous"
+        cover
+        direction="left"
+        bg={getThemeColor()}
+        duration={0.6}
+      >
         {previous.frontmatter.title}
       </RecommendedLink>
     )}
 
     {next && (
-      <RecommendedLink to={next.fields.slug} className="next">
+      <RecommendedLink
+        to={next.fields.slug}
+        className="next"
+        cover
+        direction="right"
+        bg={getThemeColor()}
+        duration={0.6}
+      >
         {next.frontmatter.title}
       </RecommendedLink>
     )}
