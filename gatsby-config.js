@@ -7,6 +7,7 @@ module.exports = {
     position: "Fullstack Developer",
     description: "A blog about frontend development and other cool stuff.",
     author: "@eduviictor",
+    siteUrl: "http://eduardovictor.com",
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -69,6 +70,7 @@ module.exports = {
         enablePartialUpdates: true,
       },
     },
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
