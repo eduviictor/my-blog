@@ -73,6 +73,7 @@ const MenuBar = () => {
           onClick={() => {
             window.__setPreferredDisplay(isListMode ? "grid" : "list")
           }}
+          id="type-visu"
         >
           {isListMode ? <Grid /> : <List />}
         </MenuBarItem>

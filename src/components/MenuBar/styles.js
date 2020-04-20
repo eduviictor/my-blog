@@ -75,5 +75,9 @@ export const MenuBarItem = styled.span`
     padding: .9rem;
     position: relative;
     width: 3.2rem;
+
+    &#type-visu{
+      display: none;
+    }
   `}
 `
