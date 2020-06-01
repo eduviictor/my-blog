@@ -2,7 +2,7 @@ backend:
   name: github
   repo: eduviictor/my-blog
   branch: master
-  site_domain: https://deploy-preview-2--vibrant-wright-cf0ee8.netlify.app
+  # site_domain: https://deploy-preview-2--vibrant-wright-cf0ee8.netlify.app/
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
